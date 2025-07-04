@@ -1,4 +1,4 @@
-import { Controller, set, useForm, type SubmitHandler } from "react-hook-form"
+import { Controller, useForm, type SubmitHandler } from "react-hook-form"
 import Select from "react-select";
 
 enum Gender {
