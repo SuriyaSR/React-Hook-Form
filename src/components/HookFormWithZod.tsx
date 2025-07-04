@@ -115,13 +115,13 @@ const HookFormWithZod = () => {
             <label className="px-2">Terms and Conditions</label>  
             {errors.terms && <p className="text-red-500">{errors.terms?.message}</p>}        
         </div>
-        <div  className="w-1/2 flex flex-col py-4">
+        <div  className="flex justify-center py-4">
           <Controller 
           name="icecream"
           control = {control}
           defaultValue = {[]}          
           render = {({ field }) => (
-            <Select {...field} isMulti options={icecream} />
+            <Select className="w-1/2 px-4 py-2" {...field} isMulti options={icecream} />
           )}
           />
           {errors.icecream && <p className="text-red-500">{errors.icecream?.message}</p>}
